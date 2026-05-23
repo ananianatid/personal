@@ -1,27 +1,29 @@
-/* ── DARK THEME (default) ── */
+/* ── LIGHT THEME (default) ── */
 :root {
-    --bg: #0b0c10;
-    --bg2: #111318;
-    --bg3: #181b22;
-    --accent: #ff6b35;
-    --accent2: #ffb347;
-    --cream: #f0ead8;
-    --muted: #6b7280;
-    --border: #1f2330;
-    --card: #13151c;
+    --bg: #F7F7F5;
+    --bg2: #F4F4F2;
+    --bg3: #F0F0EE;
+    --accent: #1B2A4A;
+    --accent2: #0F1C33;
+    --cream: #111111;
+    --muted: #555555;
+    --border: #E2E2E2;
+    --card: #FFFFFF;
+    --tag-bg: #EEF1F6;
 }
 
-/* ── LIGHT THEME ── */
-[data-theme="light"] {
-    --bg: #f8f6f1;
-    --bg2: #edeae2;
-    --bg3: #e4e0d6;
-    --accent: #e85c2a;
-    --accent2: #d4860a;
-    --cream: #1a1814;
-    --muted: #6b6860;
-    --border: #d4cfc4;
-    --card: #f0ece4;
+/* ── DARK THEME ── */
+[data-theme="dark"] {
+    --bg: #0D0F14;
+    --bg2: #121418;
+    --bg3: #17191E;
+    --accent: #4A7BCC;
+    --accent2: #5A8BDC;
+    --cream: #F0F0EE;
+    --muted: #9A9A98;
+    --border: #1E2025;
+    --card: #0D0F14;
+    --tag-bg: #1A1D28;
 }
 
 *,
@@ -61,6 +63,7 @@ body {
     transform: translate(-50%, -50%);
     transition: transform .15s ease, width .2s, height .2s, background .2s;
     mix-blend-mode: difference;
+    opacity: .7;
 }
 
 .cursor.hover {
@@ -85,13 +88,13 @@ nav {
 }
 
 nav.scrolled {
-    background: rgba(11, 12, 16, .85);
+    background: rgba(247, 247, 245, .9);
     border-color: var(--border);
     backdrop-filter: blur(12px);
 }
 
-[data-theme="light"] nav.scrolled {
-    background: rgba(248, 246, 241, .9);
+[data-theme="dark"] nav.scrolled {
+    background: rgba(13, 15, 20, .9);
 }
 
 /* ── THEME TOGGLE ── */
@@ -141,12 +144,8 @@ nav.scrolled {
     transition: color .2s;
 }
 
-.nav-links a:hover {
-    color: var(--cream);
-}
-
-/* light mode — nav links hover */
-[data-theme="light"] .nav-links a:hover {
+.nav-links a:hover,
+[data-theme="dark"] .nav-links a:hover {
     color: var(--cream);
 }
 
@@ -166,14 +165,14 @@ nav.scrolled {
     inset: 0;
     z-index: 0;
     background:
-        radial-gradient(ellipse 60% 60% at 75% 30%, rgba(255, 107, 53, .12) 0%, transparent 65%),
-        radial-gradient(ellipse 40% 40% at 15% 80%, rgba(255, 179, 71, .06) 0%, transparent 60%);
+        radial-gradient(ellipse 60% 60% at 75% 30%, rgba(27, 42, 74, .04) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 40% at 15% 80%, rgba(27, 42, 74, .02) 0%, transparent 60%);
 }
 
-[data-theme="light"] .hero-bg {
+[data-theme="dark"] .hero-bg {
     background:
-        radial-gradient(ellipse 60% 60% at 75% 30%, rgba(232, 92, 42, .10) 0%, transparent 65%),
-        radial-gradient(ellipse 40% 40% at 15% 80%, rgba(212, 134, 10, .07) 0%, transparent 60%);
+        radial-gradient(ellipse 60% 60% at 75% 30%, rgba(74, 123, 204, .06) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 40% at 15% 80%, rgba(74, 123, 204, .03) 0%, transparent 60%);
 }
 
 .hero-grid {
@@ -200,7 +199,7 @@ nav.scrolled {
     font-family: 'DM Mono', monospace;
     font-size: .78rem;
     color: var(--accent);
-    border: 1px solid rgba(255, 107, 53, .3);
+    border: 1px solid rgba(27, 42, 74, .25);
     padding: .3rem .8rem;
     border-radius: 2px;
     margin-bottom: 2rem;
@@ -231,7 +230,7 @@ nav.scrolled {
 
 .hero-sub {
     font-size: 1.15rem;
-    color: var(--muted);
+    color: var(--cream);
     max-width: 560px;
     margin-top: 2rem;
     font-weight: 300;
@@ -248,7 +247,7 @@ nav.scrolled {
 
 .btn-primary {
     background: var(--accent);
-    color: #fff;
+    color: #FFFFFF;
     padding: .8rem 2rem;
     border-radius: 2px;
     font-weight: 700;
@@ -265,8 +264,8 @@ nav.scrolled {
 }
 
 .btn-outline {
-    border: 1px solid var(--border);
-    color: var(--cream);
+    border: 1px solid var(--accent);
+    color: var(--accent);
     padding: .8rem 2rem;
     border-radius: 2px;
     font-weight: 500;
@@ -342,14 +341,10 @@ section {
 }
 
 .about-text p {
-    color: #5a5550;
+    color: var(--muted);
     font-size: 1.05rem;
     line-height: 1.8;
     margin-bottom: 1.2rem;
-}
-
-[data-theme="light"] .about-text p {
-    color: #4a4540;
 }
 
 .about-text p strong {
@@ -410,7 +405,7 @@ section {
 }
 
 .skill-group:hover {
-    border-color: rgba(255, 107, 53, .4);
+    border-color: var(--accent);
     transform: translateY(-3px);
 }
 
@@ -432,9 +427,9 @@ section {
 }
 
 .skill-tag {
-    background: rgba(255, 107, 53, .08);
-    color: var(--cream);
-    border: 1px solid rgba(255, 107, 53, .15);
+    background: var(--tag-bg);
+    color: var(--accent);
+    border: 1px solid var(--border);
     padding: .3rem .7rem;
     border-radius: 2px;
     font-size: .8rem;
@@ -478,8 +473,8 @@ section {
     width: 42px;
     height: 42px;
     border-radius: 3px;
-    background: rgba(255, 107, 53, .12);
-    border: 1px solid rgba(255, 107, 53, .25);
+    background: var(--tag-bg);
+    border: 1px solid var(--border);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -499,7 +494,7 @@ section {
 }
 
 .project-link {
-    color: var(--muted);
+    color: var(--accent);
     text-decoration: none;
     font-size: .8rem;
     font-family: 'DM Mono', monospace;
@@ -511,7 +506,7 @@ section {
 }
 
 .project-link:hover {
-    color: var(--accent);
+    color: var(--accent2);
     border-color: var(--accent);
 }
 
@@ -543,9 +538,9 @@ section {
 .stack-tag {
     font-family: 'DM Mono', monospace;
     font-size: .72rem;
-    color: var(--accent2);
-    background: rgba(255, 179, 71, .07);
-    border: 1px solid rgba(255, 179, 71, .15);
+    color: var(--accent);
+    background: var(--tag-bg);
+    border: 1px solid var(--border);
     padding: .2rem .55rem;
     border-radius: 2px;
 }
@@ -573,7 +568,7 @@ section {
 
 .project-featured-meta {
     width: 220px;
-    background: rgba(255, 107, 53, .04);
+    background: var(--bg3);
     border-left: 1px solid var(--border);
     padding: 1.8rem;
     display: flex;
@@ -602,9 +597,9 @@ section {
     display: inline-flex;
     align-items: center;
     gap: .4rem;
-    background: rgba(255, 107, 53, .12);
+    background: var(--tag-bg);
     color: var(--accent);
-    border: 1px solid rgba(255, 107, 53, .3);
+    border: 1px solid var(--border);
     font-family: 'DM Mono', monospace;
     font-size: .7rem;
     letter-spacing: .12em;

@@ -53,7 +53,7 @@ const applyTheme = (theme) => {
   document.body.style.display = '';
 };
 
-const savedTheme = localStorage.getItem('theme') || 'dark';
+const savedTheme = localStorage.getItem('theme') || 'light';
 applyTheme(savedTheme);
 
 toggleBtn.addEventListener('click', () => {
