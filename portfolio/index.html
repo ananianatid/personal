@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anatide ANANI — Développeur Web</title>
+  <title>Anatide ANANI - Développeur Web</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -28,7 +28,15 @@
       <li><a href="#hobbies">Loisirs</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button id="theme-toggle" aria-label="Basculer le thème" title="Mode clair / sombre">🌙</button>
+    <button id="theme-toggle" aria-label="Basculer le theme" title="Mode clair / sombre">
+      <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+        <circle cx="12" cy="12" r="5"/>
+        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+      <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" style="display:none">
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+      </svg>
+    </button>
   </nav>
 
   <!-- HERO -->
@@ -54,7 +62,7 @@
   <section id="about">
     <div class="about-grid reveal">
       <div class="about-text">
-        <div class="section-label">// 01 — À propos</div>
+        <div class="section-label">// 01 - À propos</div>
         <h2 class="section-title">Code, logique<br />& solutions.</h2>
         <p>Passionné d'informatique depuis le lycée, j'ai démarré avec <strong>Arduino et l'IoT</strong> avant de
           plonger dans le développement web. Aujourd'hui en 3ème année de Licence en Génie Logiciel, je conçois des
@@ -63,7 +71,7 @@
           application mobile offline-first pour un atelier de couture. Mon approche est toujours orientée
           <strong>architecture propre</strong> et <strong>expérience utilisateur</strong>.
         </p>
-        <p>En parallèle, j'administre le site WordPress d'une ONG internationale en production — une responsabilité qui
+        <p>En parallèle, j'administre le site WordPress d'une ONG internationale en production - une responsabilité qui
           m'a appris la rigueur du monde réel.</p>
       </div>
       <div class="about-stats">
@@ -89,7 +97,7 @@
 
   <!-- SKILLS -->
   <section id="skills">
-    <div class="section-label reveal">// 02 — Compétences</div>
+    <div class="section-label reveal">// 02 - Compétences</div>
     <h2 class="section-title reveal">Stack technique.</h2>
     <div class="skills-grid">
       <div class="skill-group reveal">
@@ -173,9 +181,9 @@
       <div class="skill-group reveal">
         <div class="skill-group-title">Langues</div>
         <div class="skill-tags">
-          <span class="skill-tag">Français — Avancé</span>
-          <span class="skill-tag">Anglais — B2</span>
-          <span class="skill-tag">Ewe — Natif</span>
+          <span class="skill-tag">Français - Avancé</span>
+          <span class="skill-tag">Anglais - B2</span>
+          <span class="skill-tag">Ewe - Natif</span>
         </div>
       </div>
     </div>
@@ -183,14 +191,14 @@
 
   <!-- PROJECTS -->
   <section id="projects">
-    <div class="section-label reveal">// 03 — Projets</div>
+    <div class="section-label reveal">// 03 - Projets</div>
     <h2 class="section-title reveal">Ce que je construis.</h2>
     <div class="projects-grid">
 
       <!-- Featured: logements_Mokpokpo -->
       <div class="project-card featured reveal">
         <div class="project-featured-content">
-          <div class="featured-badge">★ Projet principal</div>
+          <div class="featured-badge">Projet principal</div>
           <div class="project-title" style="font-size:1.25rem; margin-bottom:.6rem;">logements_Mokpokpo</div>
           <p class="project-desc">Application complète de gestion des résidences universitaires. Panneau
             d'administration Filament v3, algorithme de scoring de priorité pour l'attribution des logements, gestion
@@ -214,7 +222,7 @@
       <!-- collegeDirectory -->
       <div class="project-card reveal">
         <div class="project-card-top">
-          <div class="project-icon">🎓</div>
+          <div class="project-icon"><span class="icon-text">CD</span></div>
           <div class="project-links">
             <span class="project-link">En cours</span>
           </div>
@@ -236,7 +244,7 @@
       <!-- App Couture -->
       <div class="project-card reveal">
         <div class="project-card-top">
-          <div class="project-icon">✂️</div>
+          <div class="project-icon"><span class="icon-text">AT</span></div>
           <div class="project-links">
             <span class="project-link">En cours</span>
           </div>
@@ -258,9 +266,9 @@
       <!-- webstore-api -->
       <div class="project-card reveal">
         <div class="project-card-top">
-          <div class="project-icon">🛒</div>
+          <div class="project-icon"><span class="icon-text">WS</span></div>
           <div class="project-links">
-            <a href="https://github.com/ananijoel/webstore-api" target="_blank" class="project-link">GitHub ↗</a>
+            <a href="https://github.com/ananijoel/webstore-api" target="_blank" class="project-link">GitHub </a>
           </div>
         </div>
         <div class="project-body">
@@ -279,9 +287,9 @@
       <!-- Classrooms -->
       <div class="project-card reveal">
         <div class="project-card-top">
-          <div class="project-icon">📚</div>
+          <div class="project-icon"><span class="icon-text">CR</span></div>
           <div class="project-links">
-            <a href="https://github.com/ananijoel/Classrooms" target="_blank" class="project-link">GitHub ↗</a>
+            <a href="https://github.com/ananijoel/Classrooms" target="_blank" class="project-link">GitHub </a>
           </div>
         </div>
         <div class="project-body">
@@ -300,10 +308,10 @@
       <!-- COMEX -->
       <div class="project-card reveal">
         <div class="project-card-top">
-          <div class="project-icon">🌐</div>
+          <div class="project-icon"><span class="icon-text">CX</span></div>
           <div class="project-links">
-            <a href="https://comex-pearl.vercel.app" target="_blank" class="project-link">Live ↗</a>
-            <a href="https://github.com/ananijoel/COMEX" target="_blank" class="project-link">GitHub ↗</a>
+            <a href="https://comex-pearl.vercel.app" target="_blank" class="project-link">Live </a>
+            <a href="https://github.com/ananijoel/COMEX" target="_blank" class="project-link">GitHub </a>
           </div>
         </div>
         <div class="project-body">
@@ -321,9 +329,9 @@
       <!-- OQSF Bénin -->
       <div class="project-card reveal">
         <div class="project-card-top">
-          <div class="project-icon">🏛️</div>
+          <div class="project-icon"><span class="icon-text">OQ</span></div>
           <div class="project-links">
-            <a href="https://oqsf.finances.bj/" target="_blank" class="project-link">Live ↗</a>
+            <a href="https://oqsf.finances.bj/" target="_blank" class="project-link">Live </a>
           </div>
         </div>
         <div class="project-body">
@@ -343,28 +351,28 @@
 
   <!-- EXPERIENCE -->
   <section id="experience">
-    <div class="section-label reveal">// 04 — Parcours</div>
+    <div class="section-label reveal">// 04 - Parcours</div>
     <h2 class="section-title reveal">Formation & expérience.</h2>
     <div class="timeline reveal">
 
       <div class="timeline-item">
-        <div class="t-period">2024 — Présent</div>
+        <div class="t-period">2024 - Présent</div>
         <div class="t-title">Gestionnaire de site WordPress</div>
-        <div class="t-org">UFW Verein — ONG internationale · ufw-verein.org</div>
+        <div class="t-org">UFW Verein - ONG internationale · ufw-verein.org</div>
         <div class="t-desc">Administration et maintenance du site institutionnel en production. Mise à jour du contenu
           éditorial et des modules. Suivi des performances et résolution d'incidents.</div>
       </div>
 
       <div class="timeline-item">
-        <div class="t-period">2023 — En cours</div>
-        <div class="t-title">Licence en Génie Logiciel — L3</div>
+        <div class="t-period">2023 - En cours</div>
+        <div class="t-title">Licence en Génie Logiciel - L3</div>
         <div class="t-org">Université · Lomé, Togo</div>
         <div class="t-desc">Formation en génie logiciel avec pratique des langages C, Python, Java, JavaScript, PHP.
           Projets académiques orientés conception et développement d'applications.</div>
       </div>
 
       <div class="timeline-item">
-        <div class="t-period">2022 — 2023</div>
+        <div class="t-period">2022 - 2023</div>
         <div class="t-title">Certification OPEM B</div>
         <div class="t-org">Conception d'une maison à éclairage connecté Bluetooth</div>
         <div class="t-desc">Code Arduino, plan AutoCAD architecture, modélisation 3D Blender, schémas électroniques
@@ -372,15 +380,15 @@
       </div>
 
       <div class="timeline-item">
-        <div class="t-period">2021 — 2022</div>
+        <div class="t-period">2021 - 2022</div>
         <div class="t-title">Certification OPEM A</div>
         <div class="t-org">Conception d'un portail à ouverture automatique</div>
         <div class="t-desc">Conception et programmation d'un système de portail automatisé avec Arduino.</div>
       </div>
 
       <div class="timeline-item">
-        <div class="t-period">2020 — 2023</div>
-        <div class="t-title">Baccalauréat Série D — Mention Bien</div>
+        <div class="t-period">2020 - 2023</div>
+        <div class="t-title">Baccalauréat Série D - Mention Bien</div>
         <div class="t-org">Lomé, Togo</div>
         <div class="t-desc"></div>
       </div>
@@ -390,36 +398,55 @@
 
   <!-- HOBBIES -->
   <section id="hobbies">
-    <div class="section-label reveal">// 05 — Loisirs</div>
+    <div class="section-label reveal">// 05 - Loisirs</div>
     <h2 class="section-title reveal">Hors du code.</h2>
     <div class="hobbies-grid">
 
       <!-- Blender -->
       <div class="hobby-card reveal">
-        <div class="hobby-icon">🎨</div>
+        <div class="hobby-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+            <circle cx="8" cy="10" r="1.5" fill="currentColor"/>
+            <circle cx="16" cy="10" r="1.5" fill="currentColor"/>
+            <path d="M8 15c0 0 1.5 2 4 2s4-2 4-2"/>
+          </svg>
+        </div>
         <div class="hobby-content">
           <h3 class="hobby-name">3D & Design</h3>
           <p class="hobby-desc">Création d'environnements et d'objets sur <strong>Blender</strong>. Passionné par le
             rendu et l'éclairage.</p>
           <a href="https://hypnotic-cattle-c52.notion.site/b238f9d4e2dd4126a7973aa8731e3974?v=cc43a98ab7ea413bb1dedc0770d64474" target="_blank" class="hobby-link">mes modeles 3D
-            ↗</a>
+            </a>
         </div>
       </div>
 
       <!-- Chess -->
       <div class="hobby-card reveal">
-        <div class="hobby-icon">♟️</div>
+        <div class="hobby-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40">
+            <path d="M12 2c-1.5 0-2.5 1-2.5 2.5S10.5 7 12 7s2.5-1 2.5-2.5S13.5 2 12 2z"/>
+            <path d="M16 14c0 0-1 3-4 3s-4-3-4-3"/>
+            <path d="M10 17l-2 5h8l-2-5"/>
+            <path d="M12 7v10"/>
+          </svg>
+        </div>
         <div class="hobby-content">
           <h3 class="hobby-name">Échecs</h3>
           <p class="hobby-desc">Joueur passionné, classé <strong>1353 Elo</strong> en classique sur Chess.com.</p>
           <a href="https://www.chess.com/member/The-Quiet-Raven" target="_blank" class="hobby-link">Mon profil Chess.com
-            ↗</a>
+            </a>
         </div>
       </div>
 
       <!-- Reading -->
       <div class="hobby-card reveal">
-        <div class="hobby-icon">📚</div>
+        <div class="hobby-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40">
+            <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+          </svg>
+        </div>
         <div class="hobby-content">
           <h3 class="hobby-name">Lecture</h3>
           <p class="hobby-desc">Curieux de tout, je lis régulièrement sur la technologie, le design et le développement
@@ -432,7 +459,7 @@
 
   <!-- CONTACT -->
   <section id="contact">
-    <div class="contact-eyebrow">// 06 — Contact</div>
+    <div class="contact-eyebrow">// 06 - Contact</div>
     <h2 class="contact-title">Travaillons<br /><span>ensemble.</span></h2>
     <p class="contact-sub">Je suis à la recherche d'un stage en développement web/logiciel. N'hésitez pas à me contacter
       !</p>

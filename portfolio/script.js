@@ -35,18 +35,24 @@ reveals.forEach(el => observer.observe(el));
 // ── THEME TOGGLE ──
 const toggleBtn = document.getElementById('theme-toggle');
 const html = document.documentElement;
+const sunIcon = toggleBtn.querySelector('.sun-icon');
+const moonIcon = toggleBtn.querySelector('.moon-icon');
 
 const applyTheme = (theme) => {
   html.setAttribute('data-theme', theme);
-  toggleBtn.textContent = theme === 'light' ? '☀️' : '🌙';
+  if (theme === 'light') {
+    sunIcon.style.display = 'none';
+    moonIcon.style.display = '';
+  } else {
+    sunIcon.style.display = '';
+    moonIcon.style.display = 'none';
+  }
   localStorage.setItem('theme', theme);
-  // Force a re-render/reflow for certain elements if needed
   document.body.style.display = 'none';
-  document.body.offsetHeight; // no-op to trigger reflow
+  document.body.offsetHeight;
   document.body.style.display = '';
 };
 
-// Load saved preference, fallback to dark
 const savedTheme = localStorage.getItem('theme') || 'dark';
 applyTheme(savedTheme);
 
