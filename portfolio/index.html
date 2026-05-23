@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anatide ANANI — Développeur Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">AA</a>
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#experience">Parcours</a></li>
+      <li><a href="#hobbies">Loisirs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" aria-label="Basculer le thème" title="Mode clair / sombre">🌙</button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Disponible pour un stage · Lomé, Togo</div>
+      <h1 class="hero-name">Anatide<br /><span>ANANI</span></h1>
+      <p class="hero-sub">
+        Développeur web full-stack en Licence 3 Génie Logiciel. Je construis des applications Laravel, des API REST
+        Node.js.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn-outline">Me contacter</a>
+      </div>
+    </div>
+    <div class="scroll-hint">Scroll</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <div class="section-label">// 01 — À propos</div>
+        <h2 class="section-title">Code, logique<br />& solutions.</h2>
+        <p>Passionné d'informatique depuis le lycée, j'ai démarré avec <strong>Arduino et l'IoT</strong> avant de
+          plonger dans le développement web. Aujourd'hui en 3ème année de Licence en Génie Logiciel, je conçois des
+          applications qui répondent à de vrais besoins.</p>
+        <p>Je travaille sur des projets concrets : gestion de résidences universitaires, annuaire étudiant avec SSO,
+          application mobile offline-first pour un atelier de couture. Mon approche est toujours orientée
+          <strong>architecture propre</strong> et <strong>expérience utilisateur</strong>.
+        </p>
+        <p>En parallèle, j'administre le site WordPress d'une ONG internationale en production — une responsabilité qui
+          m'a appris la rigueur du monde réel.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num">30+</div>
+          <div class="stat-label">Dépôts GitHub publics</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">4+</div>
+          <div class="stat-label">Projets en production</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">B2</div>
+          <div class="stat-label">Niveau d'anglais</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">L3</div>
+          <div class="stat-label">Génie Logiciel</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label reveal">// 02 — Compétences</div>
+    <h2 class="section-title reveal">Stack technique.</h2>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Backend</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Laravel 10/12</span>
+          <span class="skill-tag">Statamic</span>
+          <span class="skill-tag">PHP 8+</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Express</span>
+          <span class="skill-tag">Sequelize</span>
+          <span class="skill-tag">Filament v3</span>
+          <span class="skill-tag">API REST</span>
+          <span class="skill-tag">Laravel Passport</span>
+          <span class="skill-tag">Sanctum</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Fondements & Scripting</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">Bash</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Frontend & Mobile</div>
+        <div class="skill-tags">
+          <span class="skill-tag">JavaScript ES6+</span>
+          <span class="skill-tag">Expo</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">Tailwind</span>
+          <span class="skill-tag">Bootstrap</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Bases de données</div>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">SQLite</span>
+          <span class="skill-tag">PostgreSQL</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Outils & DevOps</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">GitLab</span>
+          <span class="skill-tag">Vite</span>
+          <span class="skill-tag">Composer</span>
+          <span class="skill-tag">npm</span>
+          <span class="skill-tag">Vercel</span>
+          <span class="skill-tag">WordPress</span>
+          <span class="skill-tag">VS Code</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Réseaux & Virtualisation</div>
+        <div class="skill-tags">
+          <span class="skill-tag">CCNA 1 / 2 / 3</span>
+          <span class="skill-tag">Cisco Packet Tracer</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">WSL</span>
+          <span class="skill-tag">VirtualBox</span>
+          <span class="skill-tag">VMware</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Conception & IoT</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Arduino</span>
+          <span class="skill-tag">AutoCAD</span>
+          <span class="skill-tag">Blender</span>
+          <span class="skill-tag">Fritzing</span>
+          <span class="skill-tag">TinkerCAD</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Langues</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Français — Avancé</span>
+          <span class="skill-tag">Anglais — B2</span>
+          <span class="skill-tag">Ewe — Natif</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label reveal">// 03 — Projets</div>
+    <h2 class="section-title reveal">Ce que je construis.</h2>
+    <div class="projects-grid">
+
+      <!-- Featured: logements_Mokpokpo -->
+      <div class="project-card featured reveal">
+        <div class="project-featured-content">
+          <div class="featured-badge">★ Projet principal</div>
+          <div class="project-title" style="font-size:1.25rem; margin-bottom:.6rem;">logements_Mokpokpo</div>
+          <p class="project-desc">Application complète de gestion des résidences universitaires. Panneau
+            d'administration Filament v3, algorithme de scoring de priorité pour l'attribution des logements, gestion
+            des contrats et paiements. Architecture orientée services avec pattern HousingActivationService.</p>
+          <div class="project-stack" style="margin-top:1.2rem;">
+            <span class="stack-tag">Laravel 12</span>
+            <span class="stack-tag">Filament v3</span>
+            <span class="stack-tag">PHP 8+</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">Tailwind</span>
+          </div>
+        </div>
+        <div class="project-featured-meta">
+          <div class="meta-item"><span>Statut</span><strong>En cours</strong></div>
+          <div class="meta-item"><span>Année</span><strong>2024</strong></div>
+          <div class="meta-item"><span>Type</span><strong>Gestion universitaire</strong></div>
+          <div class="meta-item"><span>Rôle</span><strong>Développeur solo</strong></div>
+        </div>
+      </div>
+
+      <!-- collegeDirectory -->
+      <div class="project-card reveal">
+        <div class="project-card-top">
+          <div class="project-icon">🎓</div>
+          <div class="project-links">
+            <span class="project-link">En cours</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">collegeDirectory</div>
+          <p class="project-desc">Annuaire universitaire avec double panel admin/étudiant. SSO OAuth2 / OpenID Connect
+            via Laravel Passport, fournisseur Socialite personnalisé et pattern shadow user.</p>
+          <div class="project-stack">
+            <span class="stack-tag">Laravel</span>
+            <span class="stack-tag">Filament v3</span>
+            <span class="stack-tag">Passport</span>
+            <span class="stack-tag">OAuth2</span>
+            <span class="stack-tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- App Couture -->
+      <div class="project-card reveal">
+        <div class="project-card-top">
+          <div class="project-icon">✂️</div>
+          <div class="project-links">
+            <span class="project-link">En cours</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">App Atelier de Couture</div>
+          <p class="project-desc">Application mobile offline-first pour la gestion de commandes et mesures clients d'un
+            atelier de couture. Sync cloud sur VPS avec modélisation dynamique des mesures.</p>
+          <div class="project-stack">
+            <span class="stack-tag">React Native</span>
+            <span class="stack-tag">Expo</span>
+            <span class="stack-tag">WatermelonDB</span>
+            <span class="stack-tag">Laravel</span>
+            <span class="stack-tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- webstore-api -->
+      <div class="project-card reveal">
+        <div class="project-card-top">
+          <div class="project-icon">🛒</div>
+          <div class="project-links">
+            <a href="https://github.com/ananijoel/webstore-api" target="_blank" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">webstore-api</div>
+          <p class="project-desc">API REST e-commerce complète avec gestion des articles (CRUD + images multi-angles),
+            utilisateurs, authentification et panier. Documentation API détaillée.</p>
+          <div class="project-stack">
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">Express</span>
+            <span class="stack-tag">Sequelize</span>
+            <span class="stack-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Classrooms -->
+      <div class="project-card reveal">
+        <div class="project-card-top">
+          <div class="project-icon">📚</div>
+          <div class="project-links">
+            <a href="https://github.com/ananijoel/Classrooms" target="_blank" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Classrooms</div>
+          <p class="project-desc">Plateforme de téléchargement de cours, TDs et emploi du temps pour une classe. Upload
+            de fichiers, historique et base de données. Projet collaboratif à 2 développeurs.</p>
+          <div class="project-stack">
+            <span class="stack-tag">PHP</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">CSS</span>
+            <span class="stack-tag">Shell</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMEX -->
+      <div class="project-card reveal">
+        <div class="project-card-top">
+          <div class="project-icon">🌐</div>
+          <div class="project-links">
+            <a href="https://comex-pearl.vercel.app" target="_blank" class="project-link">Live ↗</a>
+            <a href="https://github.com/ananijoel/COMEX" target="_blank" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">COMEX</div>
+          <p class="project-desc">Maquette d'interface e-commerce déployée en production sur Vercel. Design responsive
+            avec HTML/CSS pur.</p>
+          <div class="project-stack">
+            <span class="stack-tag">HTML5</span>
+            <span class="stack-tag">CSS3</span>
+            <span class="stack-tag">Vercel</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- OQSF Bénin -->
+      <div class="project-card reveal">
+        <div class="project-card-top">
+          <div class="project-icon">🏛️</div>
+          <div class="project-links">
+            <a href="https://oqsf.finances.bj/" target="_blank" class="project-link">Live ↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">OQSF Bénin</div>
+          <p class="project-desc">Portail institutionnel de l'Observatoire de la Qualité des Services Financiers. Gestion des plaintes, ressources réglementaires et actualités financières.</p>
+          <div class="project-stack">
+            <span class="stack-tag">Statamic</span>
+            <span class="stack-tag">Laravel</span>
+            <span class="stack-tag">PHP</span>
+            <span class="stack-tag">Tailwind</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-label reveal">// 04 — Parcours</div>
+    <h2 class="section-title reveal">Formation & expérience.</h2>
+    <div class="timeline reveal">
+
+      <div class="timeline-item">
+        <div class="t-period">2024 — Présent</div>
+        <div class="t-title">Gestionnaire de site WordPress</div>
+        <div class="t-org">UFW Verein — ONG internationale · ufw-verein.org</div>
+        <div class="t-desc">Administration et maintenance du site institutionnel en production. Mise à jour du contenu
+          éditorial et des modules. Suivi des performances et résolution d'incidents.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="t-period">2023 — En cours</div>
+        <div class="t-title">Licence en Génie Logiciel — L3</div>
+        <div class="t-org">Université · Lomé, Togo</div>
+        <div class="t-desc">Formation en génie logiciel avec pratique des langages C, Python, Java, JavaScript, PHP.
+          Projets académiques orientés conception et développement d'applications.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="t-period">2022 — 2023</div>
+        <div class="t-title">Certification OPEM B</div>
+        <div class="t-org">Conception d'une maison à éclairage connecté Bluetooth</div>
+        <div class="t-desc">Code Arduino, plan AutoCAD architecture, modélisation 3D Blender, schémas électroniques
+          Fritzing et TinkerCAD. Travail en équipe via Notion.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="t-period">2021 — 2022</div>
+        <div class="t-title">Certification OPEM A</div>
+        <div class="t-org">Conception d'un portail à ouverture automatique</div>
+        <div class="t-desc">Conception et programmation d'un système de portail automatisé avec Arduino.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="t-period">2020 — 2023</div>
+        <div class="t-title">Baccalauréat Série D — Mention Bien</div>
+        <div class="t-org">Lomé, Togo</div>
+        <div class="t-desc"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOBBIES -->
+  <section id="hobbies">
+    <div class="section-label reveal">// 05 — Loisirs</div>
+    <h2 class="section-title reveal">Hors du code.</h2>
+    <div class="hobbies-grid">
+
+      <!-- Blender -->
+      <div class="hobby-card reveal">
+        <div class="hobby-icon">🎨</div>
+        <div class="hobby-content">
+          <h3 class="hobby-name">3D & Design</h3>
+          <p class="hobby-desc">Création d'environnements et d'objets sur <strong>Blender</strong>. Passionné par le
+            rendu et l'éclairage.</p>
+          <a href="https://hypnotic-cattle-c52.notion.site/b238f9d4e2dd4126a7973aa8731e3974?v=cc43a98ab7ea413bb1dedc0770d64474" target="_blank" class="hobby-link">mes modeles 3D
+            ↗</a>
+        </div>
+      </div>
+
+      <!-- Chess -->
+      <div class="hobby-card reveal">
+        <div class="hobby-icon">♟️</div>
+        <div class="hobby-content">
+          <h3 class="hobby-name">Échecs</h3>
+          <p class="hobby-desc">Joueur passionné, classé <strong>1353 Elo</strong> en classique sur Chess.com.</p>
+          <a href="https://www.chess.com/member/The-Quiet-Raven" target="_blank" class="hobby-link">Mon profil Chess.com
+            ↗</a>
+        </div>
+      </div>
+
+      <!-- Reading -->
+      <div class="hobby-card reveal">
+        <div class="hobby-icon">📚</div>
+        <div class="hobby-content">
+          <h3 class="hobby-name">Lecture</h3>
+          <p class="hobby-desc">Curieux de tout, je lis régulièrement sur la technologie, le design et le développement
+            personnel.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-eyebrow">// 06 — Contact</div>
+    <h2 class="contact-title">Travaillons<br /><span>ensemble.</span></h2>
+    <p class="contact-sub">Je suis à la recherche d'un stage en développement web/logiciel. N'hésitez pas à me contacter
+      !</p>
+    <div class="contact-links">
+      <a href="mailto:ananianatid@gmail.com" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
+        ananianatid@gmail.com
+      </a>
+      <a href="tel:+22870076829" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z" />
+        </svg>
+        +228 70 07 68 29
+      </a>
+      <a href="tel:+22898864622" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z" />
+        </svg>
+        +228 98 86 46 22
+      </a>
+      <a href="https://github.com/ananianatid" target="_blank" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        github.com/ananianatid
+      </a>
+      <a href="https://github.com/ananijoel" target="_blank" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        github.com/ananijoel <small style="opacity:.6;font-size:.75em;">(secondaire)</small>
+      </a>
+      <a href="https://gitlab.com/ananianatid" target="_blank" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 01-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 014.82 2a.43.43 0 01.58 0 .42.42 0 01.11.18l2.44 7.49h8.1l2.44-7.49a.42.42 0 01.11-.18.43.43 0 01.58 0 .42.42 0 01.11.18l2.44 7.51L23 13.45a.84.84 0 01-.35.94z" />
+        </svg>
+        gitlab.com/ananianatid
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2025 Anatide ANANI</span>
+    <span>Lomé, Togo · ananianatid@gmail.com</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
