@@ -1,29 +1,27 @@
 /* ── LIGHT THEME (default) ── */
 :root {
-    --bg: #F7F7F5;
-    --bg2: #F4F4F2;
-    --bg3: #F0F0EE;
+    --bg: #e8e8e8;
+    --bg2: #f8f8f8;
     --accent: #1B2A4A;
     --accent2: #0F1C33;
-    --cream: #111111;
-    --muted: #555555;
-    --border: #E2E2E2;
-    --card: #FFFFFF;
-    --tag-bg: #EEF1F6;
+    --cream: #111;
+    --muted: #555;
+    --border: #ddd;
+    --card: #fff;
+    --tag-bg: #eef1f6;
 }
 
 /* ── DARK THEME ── */
 [data-theme="dark"] {
-    --bg: #0D0F14;
-    --bg2: #121418;
-    --bg3: #17191E;
-    --accent: #4A7BCC;
-    --accent2: #5A8BDC;
-    --cream: #F0F0EE;
-    --muted: #9A9A98;
-    --border: #1E2025;
-    --card: #0D0F14;
-    --tag-bg: #1A1D28;
+    --bg: #1a1a1a;
+    --bg2: #222;
+    --accent: #5a8bdc;
+    --accent2: #7aa3ed;
+    --cream: #e0e0e0;
+    --muted: #999;
+    --border: #333;
+    --card: #111;
+    --tag-bg: #1a1d28;
 }
 
 *,
@@ -34,18 +32,15 @@
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background: var(--bg);
     color: var(--cream);
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 15px;
-    line-height: 1.6;
-    transition: background .3s ease, color .3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 1.35;
     padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 /* ── CURSOR ── */
@@ -97,31 +92,30 @@ body {
     transform: rotate(20deg) scale(1.08);
 }
 
-/* ── PAGE LAYOUT ── */
+/* ── PAGE LAYOUT (A4) ── */
 .cv-page {
-    max-width: 210mm;
-    margin: 0 auto;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 4px;
+    width: 210mm;
+    min-height: 297mm;
     overflow: hidden;
+    background: var(--card);
+    box-shadow: 0 2px 16px rgba(0,0,0,.1);
 }
 
 /* ── HEADER ── */
 .cv-header {
     background: var(--bg2);
-    border-bottom: 1px solid var(--border);
-    padding: 2rem 2.5rem;
+    border-bottom: 2px solid var(--accent);
+    padding: .8rem 1.5rem;
     text-align: center;
 }
 
 .cv-name {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-family: Impact, Arial Black, sans-serif;
+    font-size: 2.4rem;
     letter-spacing: .04em;
     line-height: 1;
     color: var(--cream);
-    margin-bottom: .4rem;
+    margin-bottom: .2rem;
 }
 
 .cv-name span {
@@ -129,24 +123,24 @@ body {
 }
 
 .cv-title {
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 600;
     color: var(--muted);
     letter-spacing: .04em;
-    margin-bottom: .4rem;
+    margin-bottom: .2rem;
 }
 
 .cv-status {
-    font-family: 'DM Mono', monospace;
-    font-size: .72rem;
+    font-family: 'Courier New', monospace;
+    font-size: .65rem;
     color: var(--accent);
     letter-spacing: .12em;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 .cv-header-contact {
-    font-size: .82rem;
+    font-size: .7rem;
     color: var(--muted);
     display: flex;
     flex-wrap: wrap;
@@ -157,11 +151,6 @@ body {
 .cv-header-contact a {
     color: var(--accent);
     text-decoration: none;
-    transition: color .2s;
-}
-
-.cv-header-contact a:hover {
-    color: var(--accent2);
 }
 
 .sep {
@@ -177,18 +166,18 @@ body {
 /* ── SIDEBAR ── */
 .cv-sidebar {
     background: var(--bg2);
-    padding: 1.8rem 2rem;
+    padding: .6rem 1rem;
     border-right: 1px solid var(--border);
 }
 
 /* ── MAIN ── */
 .cv-main {
-    padding: 1.8rem 2rem;
+    padding: .6rem 1rem;
 }
 
 /* ── SECTION ── */
 .cv-section {
-    margin-bottom: 1.8rem;
+    margin-bottom: .6rem;
 }
 
 .cv-section:last-child {
@@ -196,20 +185,20 @@ body {
 }
 
 .cv-section-label {
-    font-family: 'DM Mono', monospace;
-    font-size: .7rem;
+    font-family: 'Courier New', monospace;
+    font-size: .6rem;
     color: var(--accent);
     letter-spacing: .2em;
     text-transform: uppercase;
-    margin-bottom: .9rem;
-    padding-bottom: .4rem;
+    margin-bottom: .5rem;
+    padding-bottom: .25rem;
     border-bottom: 1px solid var(--border);
 }
 
 .cv-text {
-    font-size: .88rem;
+    font-size: .75rem;
     color: var(--muted);
-    line-height: 1.7;
+    line-height: 1.4;
 }
 
 .cv-text strong {
@@ -222,9 +211,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .35rem 0;
+    padding: .2rem 0;
     border-bottom: 1px solid var(--border);
-    font-size: .85rem;
+    font-size: .75rem;
 }
 
 .lang-item:last-child {
@@ -237,14 +226,14 @@ body {
 }
 
 .lang-level {
-    font-family: 'DM Mono', monospace;
-    font-size: .75rem;
+    font-family: 'Courier New', monospace;
+    font-size: .65rem;
     color: var(--accent);
 }
 
 /* ── SKILL GROUPS ── */
 .skill-group {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 .skill-group:last-child {
@@ -252,27 +241,27 @@ body {
 }
 
 .skill-group-label {
-    font-family: 'DM Mono', monospace;
-    font-size: .68rem;
+    font-family: 'Courier New', monospace;
+    font-size: .55rem;
     color: var(--accent);
     letter-spacing: .12em;
     text-transform: uppercase;
-    margin-bottom: .5rem;
+    margin-bottom: .3rem;
 }
 
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: .35rem;
+    gap: .25rem;
 }
 
 .tag {
-    font-family: 'DM Mono', monospace;
-    font-size: .65rem;
+    font-family: 'Courier New', monospace;
+    font-size: 7px;
     color: var(--accent);
     background: var(--tag-bg);
     border: 1px solid var(--border);
-    padding: .2rem .5rem;
+    padding: .15rem .4rem;
     border-radius: 2px;
     white-space: nowrap;
 }
@@ -280,12 +269,12 @@ body {
 /* ── HOBBY LIST ── */
 .hobby-list {
     list-style: none;
-    font-size: .85rem;
+    font-size: .75rem;
     color: var(--muted);
 }
 
 .hobby-list li {
-    padding: .3rem 0;
+    padding: .15rem 0;
     border-bottom: 1px solid var(--border);
 }
 
@@ -296,13 +285,13 @@ body {
 .hobby-list li::before {
     content: '— ';
     color: var(--accent);
-    font-family: 'DM Mono', monospace;
+    font-family: 'Courier New', monospace;
 }
 
 /* ── ENTRIES (experience, formation, projects) ── */
 .entry {
-    margin-bottom: 1.2rem;
-    padding-bottom: 1.2rem;
+    margin-bottom: .5rem;
+    padding-bottom: .5rem;
     border-bottom: 1px solid var(--border);
 }
 
@@ -322,55 +311,67 @@ body {
 
 .entry-title {
     font-weight: 700;
-    font-size: .9rem;
+    font-size: .8rem;
     color: var(--cream);
 }
 
 .entry-period {
-    font-family: 'DM Mono', monospace;
-    font-size: .7rem;
+    font-family: 'Courier New', monospace;
+    font-size: .6rem;
     color: var(--accent);
     white-space: nowrap;
     letter-spacing: .05em;
 }
 
 .entry-org {
-    font-family: 'DM Mono', monospace;
-    font-size: .72rem;
+    font-family: 'Courier New', monospace;
+    font-size: .65rem;
     color: var(--muted);
-    margin-bottom: .5rem;
+    margin-bottom: .25rem;
     letter-spacing: .04em;
 }
 
 .entry-desc {
-    font-size: .82rem;
+    font-size: .72rem;
     color: var(--muted);
-    line-height: 1.65;
+    line-height: 1.4;
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: .35rem;
-    margin-top: .6rem;
+    gap: .2rem;
+    margin-top: .3rem;
 }
 
 /* ── FOOTER ── */
 .cv-footer {
     border-top: 1px solid var(--border);
-    padding: 1rem 2.5rem;
+    padding: .4rem 1.5rem;
     display: flex;
-    justify-content: space-between;
-    font-family: 'DM Mono', monospace;
-    font-size: .7rem;
+    justify-content: center;
+    font-family: 'Courier New', monospace;
+    font-size: .6rem;
     color: var(--muted);
     background: var(--bg2);
 }
 
+/* ── PRINT ── */
+@page {
+    size: A4;
+    margin: 0;
+}
+
 /* ── RESPONSIVE ── */
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     body {
-        padding: 1rem .5rem;
+        padding: 0;
+    }
+
+    .cv-page {
+        width: 100%;
+        min-height: auto;
+        box-shadow: none;
     }
 
     .cv-body {
@@ -383,12 +384,12 @@ body {
     }
 
     .cv-header {
-        padding: 1.5rem 1.2rem;
+        padding: 1.2rem 1rem;
     }
 
     .cv-sidebar,
     .cv-main {
-        padding: 1.5rem 1.2rem;
+        padding: 1rem;
     }
 
     .cv-header-contact {
@@ -406,172 +407,6 @@ body {
     }
 
     .cv-footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: .3rem;
-        padding: .8rem 1.2rem;
-    }
-}
-
-/* ── PRINT ── */
-@page {
-    size: A4;
-    margin: 0;
-}
-
-@media print {
-    html {
-        font-size: 10px;
-    }
-
-    body {
-        padding: 0;
-        background: #fff;
-        color: #000;
-        line-height: 1.4;
-    }
-
-    .cursor,
-    .theme-toggle {
-        display: none !important;
-    }
-
-    .cv-page {
-        max-width: 100%;
-        margin: 0;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-    }
-
-    .cv-header {
-        background: #f8f8f8;
-        padding: 0.8rem 1.5rem;
-        border-bottom: 2px solid #1B2A4A;
-    }
-
-    .cv-name {
-        font-size: 2.4rem;
-        color: #000;
-    }
-
-    .cv-name span {
-        color: #1B2A4A;
-    }
-
-    .cv-title {
-        color: #555;
-    }
-
-    .cv-status {
-        margin-bottom: 0.4rem;
-    }
-
-    .cv-header-contact a {
-        color: #1B2A4A;
-    }
-
-    .cv-sidebar {
-        background: #f8f8f8;
-        border-right-color: #ddd;
-        padding: 0.8rem 1rem;
-    }
-
-    .cv-main {
-        padding: 0.8rem 1rem;
-    }
-
-    .cv-section {
-        margin-bottom: 0.7rem;
-        break-inside: avoid;
-    }
-
-    .cv-section-label {
-        color: #1B2A4A;
-        border-bottom-color: #ddd;
-        margin-bottom: 0.4rem;
-        padding-bottom: 0.2rem;
-    }
-
-    .cv-text {
-        line-height: 1.4;
-    }
-
-    .cv-text strong {
-        color: #000;
-    }
-
-    .lang-item {
-        padding: 0.2rem 0;
-        border-bottom-color: #ddd;
-    }
-
-    .lang-name {
-        color: #000;
-    }
-
-    .lang-level {
-        color: #1B2A4A;
-    }
-
-    .skill-group {
-        margin-bottom: 0.5rem;
-    }
-
-    .tag {
-        color: #1B2A4A;
-        background: #eef1f6;
-        border-color: #ddd;
-    }
-
-    .hobby-list li {
-        border-bottom-color: #ddd;
-    }
-
-    .hobby-list li::before {
-        color: #1B2A4A;
-    }
-
-    .entry {
-        margin-bottom: 0.6rem;
-        padding-bottom: 0.6rem;
-        border-bottom-color: #ddd;
-    }
-
-    .entry-title {
-        color: #000;
-    }
-
-    .entry-period {
-        color: #1B2A4A;
-    }
-
-    .entry-org {
-        color: #555;
-    }
-
-    .entry-desc {
-        color: #444;
-        line-height: 1.4;
-    }
-
-    .cv-footer {
-        background: #f8f8f8;
-        border-top-color: #ddd;
-        color: #888;
-    }
-
-    [data-theme="dark"] {
-        --bg: #fff;
-        --bg2: #f8f8f8;
-        --bg3: #f0f0ee;
-        --accent: #1B2A4A;
-        --accent2: #0F1C33;
-        --cream: #000;
-        --muted: #555;
-        --border: #ddd;
-        --card: #fff;
-        --tag-bg: #eef1f6;
+        padding: .6rem 1rem;
     }
 }

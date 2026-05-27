@@ -41,7 +41,7 @@ html {
 body {
     background: var(--bg);
     color: var(--cream);
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
@@ -121,7 +121,7 @@ nav.scrolled {
 }
 
 .nav-logo {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: Impact, Arial Black, sans-serif;
     font-size: 1.5rem;
     letter-spacing: .1em;
     color: var(--accent);
@@ -196,7 +196,7 @@ nav.scrolled {
     display: inline-flex;
     align-items: center;
     gap: .5rem;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Courier New', monospace;
     font-size: .78rem;
     color: var(--accent);
     border: 1px solid rgba(27, 42, 74, .25);
@@ -216,7 +216,7 @@ nav.scrolled {
 }
 
 .hero-name {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: Impact, Arial Black, sans-serif;
     font-size: clamp(5rem, 12vw, 11rem);
     line-height: .92;
     letter-spacing: .02em;
@@ -286,7 +286,7 @@ nav.scrolled {
     position: absolute;
     bottom: 2.5rem;
     right: 4rem;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Courier New', monospace;
     font-size: .72rem;
     color: var(--muted);
     letter-spacing: .12em;
@@ -311,7 +311,7 @@ section {
 }
 
 .section-label {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Courier New', monospace;
     font-size: .75rem;
     color: var(--accent);
     letter-spacing: .2em;
@@ -320,7 +320,7 @@ section {
 }
 
 .section-title {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: Impact, Arial Black, sans-serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
     letter-spacing: .04em;
     line-height: 1;
@@ -372,7 +372,7 @@ section {
 }
 
 .stat-num {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: Impact, Arial Black, sans-serif;
     font-size: 3rem;
     color: var(--accent);
     line-height: 1;
@@ -410,7 +410,7 @@ section {
 }
 
 .skill-group-title {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Courier New', monospace;
     font-size: .78rem;
     color: var(--accent);
     letter-spacing: .14em;
@@ -481,7 +481,7 @@ section {
 }
 
 .icon-text {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Courier New', monospace;
     font-weight: 700;
     font-size: .75rem;
     color: var(--accent);
@@ -497,7 +497,7 @@ section {
     color: var(--accent);
     text-decoration: none;
     font-size: .8rem;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Courier New', monospace;
     letter-spacing: .06em;
     padding: .3rem .6rem;
     border: 1px solid var(--border);
@@ -536,7 +536,7 @@ section {
 }
 
 .stack-tag {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Courier New', monospace;
     font-size: .72rem;
     color: var(--accent);
     background: var(--tag-bg);
@@ -577,7 +577,7 @@ section {
 }
 
 .meta-item {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Courier New', monospace;
     font-size: .72rem;
 }
 
@@ -600,7 +600,7 @@ section {
     background: var(--tag-bg);
     color: var(--accent);
     border: 1px solid var(--border);
-    font-family: 'DM Mono', monospace;
+    font-family: 'Courier New', monospace;
     font-size: .7rem;
     letter-spacing: .12em;
     padding: .25rem .7rem;
@@ -652,7 +652,7 @@ section {
 }
 
 .t-period {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Courier New', monospace;
     font-size: .75rem;
     color: var(--accent);
     letter-spacing: .1em;
@@ -731,7 +731,7 @@ section {
 }
 
 .hobby-name {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: Impact, Arial Black, sans-serif;
     font-size: 1.8rem;
     letter-spacing: .02em;
     color: var(--cream);
@@ -753,7 +753,7 @@ section {
     align-items: center;
     gap: .5rem;
     margin-top: 1rem;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Courier New', monospace;
     font-size: .8rem;
     color: var(--accent);
     text-decoration: none;
@@ -774,7 +774,7 @@ section {
 }
 
 .contact-eyebrow {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Courier New', monospace;
     font-size: .78rem;
     color: var(--accent);
     letter-spacing: .2em;
@@ -783,7 +783,7 @@ section {
 }
 
 .contact-title {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: Impact, Arial Black, sans-serif;
     font-size: clamp(3rem, 7vw, 6rem);
     line-height: .95;
     margin-bottom: 1.5rem;
@@ -845,7 +845,7 @@ footer {
     align-items: center;
     font-size: .8rem;
     color: var(--muted);
-    font-family: 'DM Mono', monospace;
+    font-family: 'Courier New', monospace;
 }
 
 /* ── ANIMATIONS ── */
