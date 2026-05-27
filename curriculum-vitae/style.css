@@ -1,7 +1,7 @@
 /* ── LIGHT THEME (default) ── */
 :root {
     --bg: #e8e8e8;
-    --bg2: #f8f8f8;
+    --bg2: #f4f4f2;
     --accent: #1B2A4A;
     --accent2: #0F1C33;
     --cream: #111;
@@ -36,8 +36,8 @@ body {
     background: var(--bg);
     color: var(--cream);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    line-height: 1.35;
+    font-size: 13px;
+    line-height: 1.45;
     padding: 2rem 1rem;
     display: flex;
     justify-content: center;
@@ -105,17 +105,17 @@ body {
 .cv-header {
     background: var(--bg2);
     border-bottom: 2px solid var(--accent);
-    padding: .8rem 1.5rem;
+    padding: 1.2rem 2rem;
     text-align: center;
 }
 
 .cv-name {
     font-family: Impact, Arial Black, sans-serif;
-    font-size: 2.4rem;
+    font-size: 3rem;
     letter-spacing: .04em;
     line-height: 1;
     color: var(--cream);
-    margin-bottom: .2rem;
+    margin-bottom: .3rem;
 }
 
 .cv-name span {
@@ -123,24 +123,24 @@ body {
 }
 
 .cv-title {
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 600;
     color: var(--muted);
     letter-spacing: .04em;
-    margin-bottom: .2rem;
+    margin-bottom: .3rem;
 }
 
 .cv-status {
     font-family: 'Courier New', monospace;
-    font-size: .65rem;
+    font-size: .72rem;
     color: var(--accent);
     letter-spacing: .12em;
     text-transform: uppercase;
-    margin-bottom: .5rem;
+    margin-bottom: .7rem;
 }
 
 .cv-header-contact {
-    font-size: .7rem;
+    font-size: .78rem;
     color: var(--muted);
     display: flex;
     flex-wrap: wrap;
@@ -166,18 +166,18 @@ body {
 /* ── SIDEBAR ── */
 .cv-sidebar {
     background: var(--bg2);
-    padding: .6rem 1rem;
+    padding: 1rem 1.4rem;
     border-right: 1px solid var(--border);
 }
 
 /* ── MAIN ── */
 .cv-main {
-    padding: .6rem 1rem;
+    padding: 1rem 1.4rem;
 }
 
 /* ── SECTION ── */
 .cv-section {
-    margin-bottom: .6rem;
+    margin-bottom: 1rem;
 }
 
 .cv-section:last-child {
@@ -186,19 +186,19 @@ body {
 
 .cv-section-label {
     font-family: 'Courier New', monospace;
-    font-size: .6rem;
+    font-size: .68rem;
     color: var(--accent);
     letter-spacing: .2em;
     text-transform: uppercase;
-    margin-bottom: .5rem;
-    padding-bottom: .25rem;
+    margin-bottom: .6rem;
+    padding-bottom: .3rem;
     border-bottom: 1px solid var(--border);
 }
 
 .cv-text {
-    font-size: .75rem;
+    font-size: .85rem;
     color: var(--muted);
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .cv-text strong {
@@ -211,9 +211,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .2rem 0;
+    padding: .25rem 0;
     border-bottom: 1px solid var(--border);
-    font-size: .75rem;
+    font-size: .85rem;
 }
 
 .lang-item:last-child {
@@ -227,13 +227,13 @@ body {
 
 .lang-level {
     font-family: 'Courier New', monospace;
-    font-size: .65rem;
+    font-size: .72rem;
     color: var(--accent);
 }
 
 /* ── SKILL GROUPS ── */
 .skill-group {
-    margin-bottom: .5rem;
+    margin-bottom: .7rem;
 }
 
 .skill-group:last-child {
@@ -242,26 +242,26 @@ body {
 
 .skill-group-label {
     font-family: 'Courier New', monospace;
-    font-size: .55rem;
+    font-size: .6rem;
     color: var(--accent);
     letter-spacing: .12em;
     text-transform: uppercase;
-    margin-bottom: .3rem;
+    margin-bottom: .35rem;
 }
 
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: .25rem;
+    gap: .3rem;
 }
 
 .tag {
     font-family: 'Courier New', monospace;
-    font-size: 7px;
+    font-size: 8px;
     color: var(--accent);
     background: var(--tag-bg);
     border: 1px solid var(--border);
-    padding: .15rem .4rem;
+    padding: .18rem .45rem;
     border-radius: 2px;
     white-space: nowrap;
 }
@@ -269,12 +269,12 @@ body {
 /* ── HOBBY LIST ── */
 .hobby-list {
     list-style: none;
-    font-size: .75rem;
+    font-size: .85rem;
     color: var(--muted);
 }
 
 .hobby-list li {
-    padding: .15rem 0;
+    padding: .2rem 0;
     border-bottom: 1px solid var(--border);
 }
 
@@ -290,8 +290,8 @@ body {
 
 /* ── ENTRIES (experience, formation, projects) ── */
 .entry {
-    margin-bottom: .5rem;
-    padding-bottom: .5rem;
+    margin-bottom: .8rem;
+    padding-bottom: .8rem;
     border-bottom: 1px solid var(--border);
 }
 
@@ -306,18 +306,18 @@ body {
     justify-content: space-between;
     align-items: baseline;
     gap: .5rem;
-    margin-bottom: .2rem;
+    margin-bottom: .25rem;
 }
 
 .entry-title {
     font-weight: 700;
-    font-size: .8rem;
+    font-size: .9rem;
     color: var(--cream);
 }
 
 .entry-period {
     font-family: 'Courier New', monospace;
-    font-size: .6rem;
+    font-size: .68rem;
     color: var(--accent);
     white-space: nowrap;
     letter-spacing: .05em;
@@ -325,33 +325,33 @@ body {
 
 .entry-org {
     font-family: 'Courier New', monospace;
-    font-size: .65rem;
+    font-size: .72rem;
     color: var(--muted);
-    margin-bottom: .25rem;
+    margin-bottom: .3rem;
     letter-spacing: .04em;
 }
 
 .entry-desc {
-    font-size: .72rem;
+    font-size: .82rem;
     color: var(--muted);
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: .2rem;
-    margin-top: .3rem;
+    gap: .3rem;
+    margin-top: .4rem;
 }
 
 /* ── FOOTER ── */
 .cv-footer {
     border-top: 1px solid var(--border);
-    padding: .4rem 1.5rem;
+    padding: .6rem 1.5rem;
     display: flex;
     justify-content: center;
     font-family: 'Courier New', monospace;
-    font-size: .6rem;
+    font-size: .68rem;
     color: var(--muted);
     background: var(--bg2);
 }
