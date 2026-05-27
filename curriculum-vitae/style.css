@@ -1,27 +1,12 @@
-/* ── LIGHT THEME (default) ── */
 :root {
     --bg: #e8e8e8;
     --bg2: #f4f4f2;
     --accent: #1B2A4A;
-    --accent2: #0F1C33;
     --cream: #111;
     --muted: #555;
     --border: #ddd;
     --card: #fff;
     --tag-bg: #eef1f6;
-}
-
-/* ── DARK THEME ── */
-[data-theme="dark"] {
-    --bg: #1a1a1a;
-    --bg2: #222;
-    --accent: #5a8bdc;
-    --accent2: #7aa3ed;
-    --cream: #e0e0e0;
-    --muted: #999;
-    --border: #333;
-    --card: #111;
-    --tag-bg: #1a1d28;
 }
 
 *,
@@ -33,63 +18,14 @@
 }
 
 body {
-    background: var(--bg);
-    color: var(--cream);
+    background: #e8e8e8;
+    color: #111;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    line-height: 1.45;
+    line-height: 1.5;
     padding: 2rem 1rem;
     display: flex;
     justify-content: center;
-}
-
-/* ── CURSOR ── */
-.cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 12px;
-    height: 12px;
-    background: var(--accent);
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: transform .15s ease, width .2s, height .2s, background .2s;
-    mix-blend-mode: difference;
-    opacity: .7;
-}
-
-.cursor.hover {
-    width: 36px;
-    height: 36px;
-    background: var(--accent2);
-}
-
-/* ── THEME TOGGLE ── */
-.theme-toggle {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 100;
-    background: var(--card);
-    border: 1px solid var(--border);
-    color: var(--cream);
-    cursor: pointer;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    transition: border-color .2s, color .2s, transform .2s, background .2s;
-}
-
-.theme-toggle:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    transform: rotate(20deg) scale(1.08);
 }
 
 /* ── PAGE LAYOUT (A4) ── */
@@ -105,7 +41,7 @@ body {
 .cv-header {
     background: var(--bg2);
     border-bottom: 2px solid var(--accent);
-    padding: 1.2rem 2rem;
+    padding: 1.5rem 2rem;
     text-align: center;
 }
 
@@ -166,18 +102,18 @@ body {
 /* ── SIDEBAR ── */
 .cv-sidebar {
     background: var(--bg2);
-    padding: 1rem 1.4rem;
+    padding: 1.2rem 1.5rem;
     border-right: 1px solid var(--border);
 }
 
 /* ── MAIN ── */
 .cv-main {
-    padding: 1rem 1.4rem;
+    padding: 1.2rem 1.5rem;
 }
 
 /* ── SECTION ── */
 .cv-section {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .cv-section:last-child {
@@ -198,7 +134,7 @@ body {
 .cv-text {
     font-size: .85rem;
     color: var(--muted);
-    line-height: 1.5;
+    line-height: 1.55;
 }
 
 .cv-text strong {
@@ -290,8 +226,8 @@ body {
 
 /* ── ENTRIES (experience, formation, projects) ── */
 .entry {
-    margin-bottom: .8rem;
-    padding-bottom: .8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid var(--border);
 }
 
@@ -334,7 +270,7 @@ body {
 .entry-desc {
     font-size: .82rem;
     color: var(--muted);
-    line-height: 1.5;
+    line-height: 1.55;
 }
 
 .project-tags {
@@ -347,7 +283,7 @@ body {
 /* ── FOOTER ── */
 .cv-footer {
     border-top: 1px solid var(--border);
-    padding: .6rem 1.5rem;
+    padding: .8rem 1.5rem;
     display: flex;
     justify-content: center;
     font-family: 'Courier New', monospace;
