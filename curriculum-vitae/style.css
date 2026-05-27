@@ -420,8 +420,8 @@ body {
         padding: 0;
         background: #fff;
         color: #000;
-        font-size: 12px;
-        line-height: 1.4;
+        font-size: 10px;
+        line-height: 1.35;
     }
 
     .cursor {
@@ -442,12 +442,12 @@ body {
 
     .cv-header {
         background: #f8f8f8;
-        padding: 1.5rem 2rem;
+        padding: 0.8rem 1.5rem;
         border-bottom: 2px solid #1B2A4A;
     }
 
     .cv-name {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
         color: #000;
     }
 
@@ -456,12 +456,18 @@ body {
     }
 
     .cv-title {
-        font-size: .9rem;
+        font-size: 0.8rem;
         color: #555;
     }
 
     .cv-status {
+        font-size: 0.65rem;
         color: #1B2A4A;
+        margin-bottom: 0.5rem;
+    }
+
+    .cv-header-contact {
+        font-size: 0.7rem;
     }
 
     .cv-header-contact a {
@@ -471,44 +477,61 @@ body {
     .cv-sidebar {
         background: #f8f8f8;
         border-right: 1px solid #ddd;
+        padding: 0.6rem 1rem;
+    }
+
+    .cv-main {
+        padding: 0.6rem 1rem;
+    }
+
+    .cv-section {
+        margin-bottom: 0.6rem;
+        break-inside: avoid;
     }
 
     .cv-section-label {
         color: #1B2A4A;
         border-bottom-color: #ddd;
+        font-size: 0.6rem;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.25rem;
+    }
+
+    .cv-text {
+        font-size: 0.75rem;
+        color: #444;
+        line-height: 1.4;
+    }
+
+    .cv-text strong {
+        color: #000;
     }
 
     .tag {
         color: #1B2A4A;
         background: #eef1f6;
         border-color: #ddd;
-        font-size: 8px;
+        font-size: 7px;
+        padding: 0.15rem 0.4rem;
     }
 
-    .entry-period {
-        color: #1B2A4A;
+    .skill-group {
+        margin-bottom: 0.5rem;
     }
 
-    .entry-title {
-        color: #000;
+    .skill-group-label {
+        font-size: 0.55rem;
+        margin-bottom: 0.3rem;
     }
 
-    .entry-desc {
-        color: #444;
+    .skill-tags {
+        gap: 0.25rem;
     }
 
-    .cv-footer {
-        background: #f8f8f8;
-        border-top: 1px solid #ddd;
-        color: #888;
-    }
-
-    .cv-text {
-        color: #444;
-    }
-
-    .cv-text strong {
-        color: #000;
+    .lang-item {
+        font-size: 0.75rem;
+        padding: 0.2rem 0;
+        border-bottom-color: #ddd;
     }
 
     .lang-name {
@@ -516,14 +539,16 @@ body {
     }
 
     .lang-level {
+        font-size: 0.65rem;
         color: #1B2A4A;
     }
 
-    .lang-item {
-        border-bottom-color: #ddd;
+    .hobby-list {
+        font-size: 0.75rem;
     }
 
     .hobby-list li {
+        padding: 0.15rem 0;
         border-bottom-color: #ddd;
     }
 
@@ -532,11 +557,44 @@ body {
     }
 
     .entry {
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
         border-bottom-color: #ddd;
     }
 
+    .entry-title {
+        font-size: 0.8rem;
+        color: #000;
+    }
+
+    .entry-period {
+        font-size: 0.6rem;
+        color: #1B2A4A;
+    }
+
     .entry-org {
+        font-size: 0.65rem;
         color: #555;
+        margin-bottom: 0.25rem;
+    }
+
+    .entry-desc {
+        font-size: 0.72rem;
+        color: #444;
+        line-height: 1.4;
+    }
+
+    .project-tags {
+        margin-top: 0.3rem;
+        gap: 0.2rem;
+    }
+
+    .cv-footer {
+        background: #f8f8f8;
+        border-top: 1px solid #ddd;
+        color: #888;
+        font-size: 0.6rem;
+        padding: 0.4rem 1.5rem;
     }
 
     [data-theme="dark"] {
@@ -550,9 +608,5 @@ body {
         --border: #ddd;
         --card: #fff;
         --tag-bg: #eef1f6;
-    }
-
-    .cv-section {
-        break-inside: avoid;
     }
 }
