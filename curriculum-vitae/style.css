@@ -422,14 +422,13 @@ body {
 
 @media print {
     html {
-        font-size: 7.5px;
+        font-size: 10px;
     }
 
     body {
         padding: 0;
         background: #fff;
         color: #000;
-        font-size: 10px;
         line-height: 1.4;
     }
 
